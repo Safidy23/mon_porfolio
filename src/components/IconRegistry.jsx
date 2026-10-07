@@ -1,0 +1,57 @@
+import {
+  FileCode,
+  Palette,
+  Braces,
+  Atom,
+  Wind,
+  Server,
+  Layers,
+  Database,
+  GitBranch,
+  Github,
+  Code2,
+  Globe,
+  AppWindow,
+  PenTool,
+  Wrench,
+  Shield,
+  ShieldCheck,
+  Coffee,
+  Cpu,
+  Smartphone,
+  GraduationCap,
+  Award,
+  BookOpen,
+  Sparkle,
+} from 'lucide-react';
+
+const ICONS = {
+  FileCode,
+  Palette,
+  Braces,
+  Atom,
+  Wind,
+  Server,
+  Layers,
+  Database,
+  GitBranch,
+  Github,
+  Code2,
+  Globe,
+  AppWindow,
+  PenTool,
+  Wrench,
+  Shield,
+  ShieldCheck,
+  Coffee,
+  Cpu,
+  Smartphone,
+  GraduationCap,
+  Award,
+  BookOpen,
+};
+
+export default function Icon({ name, ...props }) {
+  const IconComponent = ICONS[name] || Sparkle;
+  return <IconComponent {...props} />;
+}
